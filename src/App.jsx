@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import firebaseDB from "./firebase";
+import firebaseDB from "./firebase.jsx";
 import { v4 } from "uuid";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { imgDB } from "./firebase"; // Ensure this import is correct
+import { imgDB } from "./firebase.jsx"; // Ensure this import is correct
 
 function App() {
   const [data1, setData1] = useState({
